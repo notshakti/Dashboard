@@ -99,3 +99,61 @@ nav ul li:hover {
   display: flex;
   gap: 10px;
 }
+
+@media (max-width: 768px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    height: auto;
+  }
+
+  .sidebar .logo {
+    display: none;
+  }
+
+  .sidebar nav ul,
+  .sidebar nav .bottom-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .sidebar nav ul li span.text {
+    display: none;
+  }
+
+  .topbar input[type="text"] {
+    width: 100%;
+  }
+
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .user-info {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 480px) {
+  .topbar input[type="text"] {
+    width: 100%;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .user-info span {
+    font-size: 14px;
+  }
+}
