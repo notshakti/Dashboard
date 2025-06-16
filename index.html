@@ -4,48 +4,53 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dashboard</title>
-  <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="container">
     <!-- Sidebar -->
     <aside class="sidebar">
-      <div class="branding">
-        <span class="material-icons">dashboard</span>
+      <div class="brand">
+        <span class="material-icons logo">dashboard</span>
         <h1>Dashboard</h1>
       </div>
-      <ul class="nav">
-        <li><span class="material-icons">home</span> Home</li>
-        <li><span class="material-icons">person</span> Profile</li>
-        <li><span class="material-icons">chat</span> Messages</li>
-        <li><span class="material-icons">history</span> History</li>
-        <li><span class="material-icons">check_circle</span> Tasks</li>
-        <li><span class="material-icons">groups</span> Communities</li>
-      </ul>
-      <ul class="bottom-nav">
-        <li><span class="material-icons">settings</span> Settings</li>
-        <li><span class="material-icons">help</span> Support</li>
-        <li><span class="material-icons">security</span> Privacy</li>
-      </ul>
+      <nav>
+        <ul>
+
+          <li><span class="material-icons">home</span> Home</li>
+          <li><span class="material-icons">person</span> Profile</li>
+          <li><span class="material-icons">chat</span> Messages</li>
+          <li><span class="material-icons">history</span> History</li>
+          <li><span class="material-icons">check_circle</span> Tasks</li>
+          <li><span class="material-icons">groups</span> Communities</li>
+        </ul>
+        <ul>
+          <li><span class="material-icons">settings</span> Settings</li>
+          <li><span class="material-icons">help</span> Support</li>
+          <li><span class="material-icons">security</span> Privacy</li>
+        </ul>
+      </nav>
     </aside>
 
-    <!-- Main content area -->
-    <main class="main-content">
-      <header class="header">
-        <input type="text" placeholder="Search..." class="search-bar" />
-        <div class="user-info">
-          <span class="material-icons">notifications</span>
-          <span class="material-icons">account_circle</span>
-          <span class="username">Shakti Vijay</span>
-        </div>
-      </header>
-      <section class="dashboard-content">
-        <h2>Welcome to your dashboard, Shakti!</h2>
-        <!-- More content here -->
-      </section>
+    <!-- Header -->
+
+    <header class="header">
+      <input type="text" placeholder="Search...">
+      <div class="user">
+
+        <span class="material-icons">notifications</span>
+        <span class="material-icons">account_circle</span>
+        <span>Shakti Vijay</span>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+
+      <h2>Welcome to your dashboard, Shakti!</h2>
     </main>
   </div>
 </body>
